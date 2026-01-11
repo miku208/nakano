@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakano Script</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="site-title">Script Bot Nakano</h1>
+                <div class="header-icon">
+                    <img src="data/icon.png" alt="Icon Website" id="site-icon">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="card-container">
+                <!-- Card untuk script akan diisi oleh JavaScript -->
+                <div class="script-card">
+                    <div class="thumbnail-container">
+                        <img id="script-thumbnail" src="" alt="Thumbnail Script" class="thumbnail">
+                    </div>
+                    <div class="script-info">
+                        <h2 id="script-name" class="script-name">Loading...</h2>
+                        <div class="script-meta">
+                            <p><i class="fas fa-code-branch"></i> Versi: <span id="script-version">-</span></p>
+                            <p><i class="fas fa-user"></i> Author: <span id="script-author">-</span></p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="#" id="download-btn" class="btn download-btn">
+                                <i class="fas fa-download"></i> Download Script
+                            </a>
+                            <button id="description-btn" class="btn description-btn">
+                                <i class="fas fa-info-circle"></i> Deskripsi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deskripsi Expandable Section -->
+                <div id="description-content" class="description-content hidden">
+                    <div class="description-header">
+                        <h3>Deskripsi Lengkap</h3>
+                        <button id="close-description" class="close-btn" aria-label="Tutup deskripsi">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="description-body">
+                        <p id="script-description">Deskripsi script akan muncul di sini...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                <i class="fas fa-exclamation-circle"></i> Script gratis, dilarang diperjualbelikan ulang
+            </p>
+        </footer>
+
+        <!-- Overlay untuk modal -->
+        <div id="overlay" class="overlay hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
